@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentTabMain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonMainFD"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="30dp"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/buttonMainRD"
+            app:layout_constraintEnd_toStartOf="@+id/buttonMainFP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonMainFP"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/buttonMainRD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonMainFD"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonMainRD"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="36dp"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/buttonMainS"
+            app:layout_constraintEnd_toStartOf="@+id/buttonMainRP"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonMainRP"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="16dp"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/buttonMainS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonMainRD" />
+
+        <Button
+            android:id="@+id/buttonMainS"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLine1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewLine1"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLine2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewLine2"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/switchAutoUpdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/switchAutoUpdate"
+            android:layout_width="159dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:text="AutoUpdate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
